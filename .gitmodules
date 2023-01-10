@@ -1,3 +1,0 @@
-[submodule "mpu9250"]
-    path = mpu9250
-    url = https://github.com/tuupola/micropython-mpu9250.git
