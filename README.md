@@ -1,4 +1,4 @@
 # MicroPython
-A repository of MicroPython projects
+A repository of information on MicroPython Projects I am working on/a part of.
 
 https://github.com/tuupola/micropython-mpu9250
