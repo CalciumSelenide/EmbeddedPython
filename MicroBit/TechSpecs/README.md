@@ -4,7 +4,7 @@ The Micro:Bit has **25** external connections on the edge connector of the board
 
 There are **5 large pins** that are also connected to holes in the board labelled: **0**, **1**, **2**, **3V**, and **GND**. And along the same edge, there are **20 small pins** that you can use when plugging the Micro:Bit into an edge connector.
 
-<img align="left" width="300" src="../../imgs/microbit/microbitv2ege.png"/>
+<img align="left" width="250" src="../../imgs/microbit/microbitv2ege.png"/>
 
 ## Large pins
 
@@ -23,13 +23,14 @@ With the micro:bit V2, pins **0**, **1**, **2**, and the **LOGO** can also be se
 **Be careful with the power pins!**
 The pins labelled **3V** and **GND** relate to the power supply of the board, and they should NEVER be connected together.
 
+
 For details on the power, current and voltage limitations of the board, see [Power Supply](https://tech.microbit.org/hardware/powersupply/).
 
 ---
 
 * **3V**: 3 volt *power output* or *power input*:
->* *power output*: If the Micro:Bit is powered by USB or a battery, then you can use the **3V** pin as a power output to power peripherals with.
->* *power input*: If the Micro:Bit is NOT being powered by USB or battery, you can use the **3V** pin to supply power input to the Micro:Bit.
+>* *Power output*: If the Micro:Bit is powered by USB or a battery, then you can use the **3V** pin as a power output to power peripherals with.
+>* *Power input*: If the Micro:Bit is NOT being powered by USB or battery, you can use the **3V** pin to supply power input to the Micro:Bit.
 * **GND**: attaches to ground in order to complete a circuit (required when using the **3V** pin)
 
 ---
