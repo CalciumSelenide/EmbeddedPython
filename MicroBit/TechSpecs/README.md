@@ -2,7 +2,11 @@
 
 The Micro:Bit has **25** external connections on the edge connector of the board, which are referred to as 'pins'. The edge connector is the gold area on the right side of board as shown the figure below.
 
-![micro:bit v1 pins](/static/mb/device/pins-v1-v2.png)
+<div style="float: right">
+  <p align="center">
+    <img src="imgs/microbit.png" width="400"/>
+  </p>
+</div>
 
 There are **5 large pins** that are also connected to holes in the board labelled: **0**, **1**, **2**, **3V**, and **GND**. And along the same edge, there are **20 small pins** that you can use when plugging the Micro:Bit into an edge connector.
 
