@@ -2,13 +2,9 @@
 
 The Micro:Bit has **25** external connections on the edge connector of the board, which are referred to as 'pins'. The edge connector is the gold area on the right side of board as shown the figure below.
 
-<div style="float: right">
-  <p align="center">
-    <img src="imgs/microbit.png" width="400"/>
-  </p>
-</div>
-
 There are **5 large pins** that are also connected to holes in the board labelled: **0**, **1**, **2**, **3V**, and **GND**. And along the same edge, there are **20 small pins** that you can use when plugging the Micro:Bit into an edge connector.
+
+<img align="left" width="300" src="../../imgs/microbit/microbitv2ege.png"/>
 
 ## Large pins
 
@@ -16,15 +12,11 @@ You can easily attach crocodile clips or 4mm banana plugs to the **5** large pin
 
 The first three, labelled **0**, **1** and **2** are flexible and can be used for many different things - which means they are often called "general purpose input and output" (shortened to GPIO). These three pins also have the ability to read analog voltages using something called an analog-to-digital converter (ADC). They all have the same function:
 
-* **0**: GPIO (general purpose digital input and output) with analog-to-digital convertor (ADC).
-* **1**: GPIO with ADC
-* **2**: GPIO with ADC
+  * **0**: GPIO (general purpose digital input and output) with analog-to-digital convertor (ADC).
+  * **1**: GPIO with ADC
+  * **2**: GPIO with ADC
 
 With the micro:bit V2, pins **0**, **1**, **2**, and the **LOGO** can also be set to work as [capacitive touch](/reference/pins/touch-set-mode) buttons.
-
-### Power pins
-
-The other two large pins (**3V** and **GND**) are very different!
 
 ### WARNING:
 
