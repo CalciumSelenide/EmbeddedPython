@@ -9,7 +9,10 @@ BOOTSEL = rp2.bootsel_button()
 def serialRX_thread():
     while True:
         rxValue = sys.stdin.buffer.readline()
-        print(rxValue)
+        if rxValue and (rxValue.decode() != "\n"):
+            print(rxValue)
+        else:
+            pass
 
 # Function to start the thread
 def startThread():
