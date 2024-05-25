@@ -1,3 +1,13 @@
+# ====================================================================================
+# Developed by CalciumSelenide
+# Last Edit: 2024/05/24
+# ====================================================================================
+# CircuitPython for boards like the RPi Pico interfacing with maxim integrated chips.
+
+# +++++++++++++++++++++++ Example Boards for Rapid Development +++++++++++++++++++++++
+# https://www.adafruit.com/product/269
+# https://www.sparkfun.com/products/13266
+
 import digitalio
 import struct
 import board
@@ -28,20 +38,19 @@ class MAX31855:
         self.spi = busio.SPI(clock=self.SRCLK, MISO=self.CHPTX)
 
     def read(self):
-        with self.spi as spi:
-            # Make sure you are the only one reading the bus ...
-            while not spi.try_lock():
-                pass
+        # Make sure you are the only one reading the bus ...
+        while not self.spi.try_lock():
+            pass
 
-            # ... reconfigure after every lock/unlock ...
-            spi.configure(baudrate=self.spiBaud, phase=self.spiPhase, polarity=self.spiPolarity)
+        # ... reconfigure after every lock/unlock ...
+        self.spi.configure(baudrate=self.spiBaud, phase=self.spiPhase, polarity=self.spiPolarity)
 
-            # ... tell our CHPSL we are ready for data and pack it ...
-            self.CHPSL.value = False
-            packetData = bytearray(4)
-            spi.readinto(packetData)
-            self.CHPSL.value = True
-            spi.unlock()
+        # ... tell our CHPSL we are ready for data and pack it ...
+        self.CHPSL.value = False
+        packetData = bytearray(4)
+        self.spi.readinto(packetData)
+        self.CHPSL.value = True
+        self.spi.unlock()
 
         # ... now return our data!
         return packetData
